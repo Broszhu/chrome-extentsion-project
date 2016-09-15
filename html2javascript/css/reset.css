@@ -1,0 +1,22 @@
+ul,li{margin: 0;border: 0;list-style: none;}
+body{min-width: 880px; min-height: 520px;overflow-x: hidden;}
+.sources-data{ width: 700px;height: 200px}
+.target-data{ width: 700px;height: 200px;}
+
+/*控制头-开始*/
+.change-title-wrap .change-title-item{ float: left;width: 150px;height: 30px;border: 1px solid darkcyan;margin-right: 10px;
+text-align: center;line-height: 30px;cursor: pointer;
+}
+.change-title-wrap .change-title-select{ background: darkcyan;color: #FFF; }
+/*控制头-结束*/
+
+
+
+.cursor-pointer{cursor: pointer;}
+#arrays-splice{position: relative;  top: 2px;}
+.change-btn{width: 120px;height: 30px;}
+
+/*主题部分控制*/
+.change-content-wrap{margin-top: 20px;}
+.change-content-wrap .change-content-item{ display: none;}
+.change-content-wrap .change-content-select{ display: block;}
