@@ -1,6 +1,11 @@
 var $page=$("#bodyer");
+//用于赋值文本的
+//var $ZeroClipboardDoms = $page.find(".cope-target-string");
+//var client = new ZeroClipboard( $ZeroClipboardDoms );
+
 var pageUtilily={
     init:function(){
+        //ZeroClipboard.config( { swfPath: "src/ZeroClipboard.swf" } );
         this.bind();
     },
     bind:function(){
@@ -20,11 +25,26 @@ var pageUtilily={
         });
 
         //todo 点击复制到剪切板
-        $page.on("focus",".target-data",function(event){
-            var targetStr=$(this).val();
-            self.getTargetStr(event,targetStr);
-            console.log(targetStr);
+/*        $page.on("focus",".target-data",function(event){
+            var targetString=$(this).val();
+            $(".cope-target-string").trigger("copy");
+            $(client).trigger("copy");
+            console.log("star trigger");
+            console.log(client);
+            console.log(event);
+
         });
+
+        client.on( "copy", function (event) {
+            var clipboard = event.clipboardData;
+            var targetString=$page.find(".target-data").val();
+            clipboard.setData( "text/plain",targetString );
+
+            console.log(event);
+            console.log("OK trigger")
+        });*/
+
+
     },
     toAlone:function(isArraySelect){
         var sourcesDataAry=$page.find(".sources-data").val().replace(/\\/g, "\\\\").replace(/\\/g, "\\/").replace(/\'/g, "\\\'").split('\n');
@@ -86,9 +106,7 @@ var pageUtilily={
         }
         $page.find(".target-data").val(outArr.join(""));
     },
-    getTargetStr:function(event,targetStr){
-        console.dir(event);
-        event.clipboardData.setData("Text",targetStr);
+    getTargetStr:function($targetDom){
     }
 };
 pageUtilily.init();

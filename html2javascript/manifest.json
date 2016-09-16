@@ -1,11 +1,11 @@
 {
-  "name":"My Test Extension",
+  "name":"Broszhu Change Tool",
   "version":"0.1",
   "manifest_version":2,
-  "description":"this is my first extension",
+  "description":"broszhu's tool",
   "browser_action":{
     "default_icon":"icon.png",
-    "default_title":"this is a test object",
+    "default_title":"Broszhu Change Tool (HTML To JavaScripr)",
     "default_popup":"popup.html"
   },
   "permissions":[
