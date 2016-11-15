@@ -1,0 +1,15 @@
+{
+  "name":"Web Tool Box",
+  "version":"0.1",
+  "manifest_version":2,
+  "description":"this is web tool box",
+  "browser_action":{
+    "default_icon":"icon.png",
+    "default_title":"Web Tool Box",
+    "default_popup":"popup.html"
+  },
+  "options_page": "popup.html",
+  "permissions":[
+  ]
+
+}
