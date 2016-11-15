@@ -1,0 +1,23 @@
+html,body{min-width: 800px; min-height: 600px;overflow-x: hidden;}
+/*header区域*/
+#page{min-width: 800px; }
+#header{height: 60px;  min-width: 800px;   /*border-top: 2px solid #2d0e14;*/ background-color:#1F1F1F;}
+#header .logo {  float: left;padding-left: 0;background-color: #ff4400;height: 60px;width: 108px;text-align: center;line-height: 60px;}
+#header .inner-wrp{overflow:hidden; }
+#header .logo a {display: block;height: 24px;font-size: 18px;color:#FFFFFF; }
+#header .logo a:hover {text-decoration: none;}
+#header .logo a .iconfont{color:#FFFFFF; }
+#header .page-title-wrap{height: 60px; float:left; color: #FFFFFF;padding-left: 20px;}
+#header .page-title-wrap h2{float:left; line-height: 60px; padding-right: 20px;font-size: 14px; border-right: 1px solid #444444; }
+/*侧边栏区域*/
+.container{background-color:#FFFFFF;}
+.container .bodyer-side{width: 108px;  min-width: 108px; border-right: 1px solid #D7D8DE;min-height: 1px;background-color:#3d3d3d; }
+.container .bodyer-side .menu{width: 108px;min-width: 108px; }
+.container .bodyer-side,
+.container .bodyer-main{display: table-cell;  vertical-align: top;  word-wrap: break-word;  word-break: break-all;}
+/*顶部导航区域*/
+.bodyer-main{width: 100%;}
+.bodyer-main .main-nav{position: relative; }
+.main-nav .tab-primary-navs{ background-color: #eaeaea;display: block;}
+/*主要内容区域*/
+.container .page-main{overflow:hidden;zoom: 1;}

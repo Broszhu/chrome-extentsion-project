@@ -1,0 +1,29 @@
+/* list 样式模块 */
+.wui-list {  margin: 0;  padding: 10px;  list-style: square inside;  }
+/* 默认有方角 */
+.wui-list-item {  font-size: 12px;  line-height: 20px;  }
+.wui-list-item a {  line-height: 20px;  text-decoration: none;  color: #08c;  }
+.wui-list-item a,
+.wui-list-item span.wui-list-item-text {  font-size: 12px;  vertical-align: middle;  }
+.wui-list-item a:hover {  text-decoration: underline;  }
+
+/* 灰色小方角 */
+.wui-list-gray .wui-list-item {  color: #808080;  }
+
+/* 灰色小方角＋灰色链接 */
+.wui-list-graylink .wui-list-item {  color: #808080;  }
+.wui-list-graylink .wui-list-item a {  color: #666;  }
+
+/* 没有小图标的 */
+.wui-list-nosquare {  list-style: none;  +list-style-position:outside;  }
+
+/* wui-dlist */
+.wui-dlist {  color: #808080;  font-size: 14px;  line-height: 2.2;  }
+.wui-dlist-tit {  float: left;
+    width: 20%;/* 默认值, 具体根据视觉可改 */
+    text-align: right;  margin: 0;  }
+.wui-dlist-det {  float: left;
+    width: 80%;/* 默认值，具体根据视觉可改 */
+    text-align: left;  margin: 0;
+}
+

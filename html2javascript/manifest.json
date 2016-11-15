@@ -1,11 +1,11 @@
 {
-  "name":"Broszhu Change Tool",
+  "name":"HTML To Javascript",
   "version":"0.1",
   "manifest_version":2,
-  "description":"broszhu's tool",
+  "description":"HTML To Javascript",
   "browser_action":{
     "default_icon":"icon.png",
-    "default_title":"Broszhu Change Tool (HTML To JavaScripr)",
+    "default_title":"Broszhu Change Tool (HTML To Javascript)",
     "default_popup":"popup.html"
   },
   "permissions":[

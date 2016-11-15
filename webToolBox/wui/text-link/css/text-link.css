@@ -1,0 +1,125 @@
+html {font-size: 62.5%;/*10 ÷ 16 × 100% = 62.5%*/}
+body {font-size: 1.4rem;/*1.4 × 10px = 14px */}
+h1 { font-size: 2.4rem;/*2.4 × 10px = 24px*/}
+.f1 { font-size: 4.8rem; }
+.f2 { font-size: 3.6rem; }
+.f3 { font-size: 2.4rem; }
+.f4 { font-size: 2rem; }
+.f5 { font-size: 1.6rem; }
+.f6 { font-size: 1.4rem; }
+.f7 { font-size: 1.2rem; }
+
+/*文本及链接颜色*/
+.wui-txt-default {  color: #333333; }
+.wui-txt-info {  color: #808080; }
+.wui-txt-muted {  color: #a6a6a6; }
+.wui-txt-primary {  color: #0e90d2; }
+.wui-txt-primary:visited {  color: #0e90d2; }
+.wui-txt-secondary {  color: #3bb4f2; }
+.wui-txt-secondary:visited {  color: #3bb4f2; }
+.wui-txt-purple {  color: #9C80C9; }
+.wui-txt-purple:visited {  color: #9C80C9; }
+.wui-txt-success {  color: #5eb95e; }
+.wui-txt-success:visited {  color: #5eb95e; }
+.wui-txt-warning {  color: #f37b1d; }
+.wui-txt-warning:visited {  color: #f37b1d; }
+.wui-txt-danger {  color: #dd514c; }
+.wui-txt-danger:visited {  color: #dd514c; }
+a.wui-txt-decoration:hover {  text-decoration: underline;  }
+
+/*字体大小*/
+.wui-txt-xxs {   font-size: 10px;  display: inline-block;  }
+.wui-txt-xxs .wui-txt-xxs-item{  font-size: 12px;  transform: scale(0.8333);/*缩放，解决chrome浏览器字体不低于12px的限制*/  display: block;  transform-origin:0 88% 0;/*改变缩放基点*/  }
+.wui-txt-xs {    font-size: 12px; }
+.wui-txt-sm {    font-size: 14px; }
+.wui-txt-lg {    font-size: 18px; }
+.wui-txt-xl {    font-size: 24px; }
+.wui-txt-xxl {   font-size: 32px; }
+.wui-txt-xxxl {  font-size: 48px; }
+
+/*居中和有对齐*/
+.wui-txt-tar{  text-align: right !important;}
+.wui-txt-tac{  text-align: center;}
+
+/*五彩缤纷的[字体]颜色*/
+.wui-txt-black { color: #000; }
+.wui-txt-near-black { color: #111; }
+.wui-txt-dark-gray { color: #333; }
+.wui-txt-mid-gray { color: #555; }
+.wui-txt-gray { color: #777; }
+.wui-txt-silver { color: #999; }
+.wui-txt-light-silver { color: #aaa; }
+.wui-txt-moon-gray { color: #ccc; }
+.wui-txt-light-gray { color: #eee; }
+.wui-txt-near-white { color: #f4f4f4; }
+.wui-txt-white { color: #fff; }
+.wui-txt-dark-red{color: #e7040f;}
+.wui-txt-red{color: #ff4136;}
+.wui-txt-light-red{color: #ff725c;}
+.wui-txt-orange { color: #ff6300; }
+.wui-txt-gold { color: #ffb700; }
+.wui-txt-yellow { color: #ffd700; }
+.wui-txt-light-yellow { color: #fbf1a9; }
+.wui-txt-purple { color: #5e2ca5; }
+.wui-txt-light-purple { color: #a463f2; }
+.wui-txt-dark-pink { color: #d5008f; }
+.wui-txt-hot-pink { color: #ff41b4; }
+.wui-txt-pink { color: #ff80cc; }
+.wui-txt-light-pink { color: #ffa3d7; }
+.wui-txt-dark-green { color: #137752; }
+.wui-txt-green { color: #19a974; }
+.wui-txt-light-green { color: #9eebcf; }
+.wui-txt-navy { color: #001b44; }
+.wui-txt-dark-blue { color: #00449e; }
+.wui-txt-blue { color: #357edd; }
+.wui-txt-light-blue { color: #96ccff; }
+.wui-txt-lightest-blue { color: #cdecff; }
+.wui-txt-washed-blue { color: #f6fffe; }
+.wui-txt-washed-green { color: #e8fdf5; }
+.wui-txt-washed-yellow { color: #fffceb; }
+.wui-txt-washed-red { color: #ffdfdf; }
+
+/*五彩缤纷的[背景]颜色*/
+.wui-bg-black { background-color: #000; }
+.wui-bg-near-black { background-color: #111; }
+.wui-bg-dark-gray { background-color: #333; }
+.wui-bg-mid-gray { background-color: #555; }
+.wui-bg-gray { background-color: #777; }
+.wui-bg-silver { background-color: #999; }
+.wui-bg-light-silver { background-color: #aaa; }
+.wui-bg-moon-gray { background-color: #ccc; }
+.wui-bg-light-gray { background-color: #eee; }
+.wui-bg-near-white { background-color: #f4f4f4; }
+.wui-bg-white { background-color: #fff; }
+.wui-bg-transparent { background-color: transparent; }
+.wui-bg-dark-red{background-color: #e7040f;}
+.wui-bg-red{background-color: #ff4136;}
+.wui-bg-light-red{background-color: #ff725c;}
+.wui-bg-orange { background-color: #ff6300; }
+.wui-bg-gold { background-color: #ffb700; }
+.wui-bg-yellow { background-color: #ffd700; }
+.wui-bg-light-yellow { background-color: #fbf1a9; }
+.wui-bg-purple { background-color: #5e2ca5; }
+.wui-bg-light-purple { background-color: #a463f2; }
+.wui-bg-dark-pink { background-color: #d5008f; }
+.wui-bg-hot-pink { background-color: #ff41b4; }
+.wui-bg-pink { background-color: #ff80cc; }
+.wui-bg-light-pink { background-color: #ffa3d7; }
+.wui-bg-dark-green { background-color: #137752; }
+.wui-bg-green { background-color: #19a974; }
+.wui-bg-light-green { background-color: #9eebcf; }
+.wui-bg-navy { background-color: #001b44; }
+.wui-bg-dark-blue { background-color: #00449e; }
+.wui-bg-blue { background-color: #357edd; }
+.wui-bg-light-blue { background-color: #96ccff; }
+.wui-bg-lightest-blue { background-color: #cdecff; }
+.wui-bg-washed-blue { background-color: #f6fffe; }
+.wui-bg-washed-green { background-color: #e8fdf5; }
+.wui-bg-washed-yellow { background-color: #fffceb; }
+.wui-bg-washed-red { background-color: #ffdfdf; }
+
+
+
+
+
+

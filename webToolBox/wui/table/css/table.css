@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* alice/table 样式模块 */
+.wui-table-title {  color: #666;  background-color: #F6F6F6;  padding: 7px 9px;  border-top: 1px solid #d9d9d9;  border-right: 1px solid #d9d9d9;  border-left: 1px solid #d9d9d9; }
+.wui-table {  border-collapse: collapse;  border: 1px solid #ccc;  width: 100%;  font-size: 12px;  text-align: left; }
+.wui-table tr {  color: #808080; }
+.wui-table thead tr {  color: #666; }
+.wui-table thead {  color: #666;  background-color: #F6F6F6;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F8F8F8', endColorstr='#F2F2F2');
+    background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#F2F2F2));
+    background: -moz-linear-gradient(top, #F8F8F8, #F2F2F2);
+    background: -o-linear-gradient(top, #F8F8F8, #F2F2F2);
+    background: linear-gradient(top, #F8F8F8, #F2F2F2); }
+.wui-table th {  padding: 7px 9px;  border-bottom: 1px solid #d9d9d9;  border-right: 1px solid #d9d9d9;  text-align: left; }
+.wui-table td {  padding: 8px 9px 7px;  border-bottom: 1px solid #d9d9d9;  border-right: 1px solid #d9d9d9; }
+.wui-table th {  padding: 7px 9px; }
+.wui-table tfoot td {  border-bottom: none; }
+
+/*隔行变色*/
+.wui-table tr:nth-child(even),
+.wui-table-split,
+.wui-table-hover {  background-color: #FBFBFB; }
+.wui-table tbody tr:hover{background-color: #fcf8e3;}
+
+/*左右无边框*/
+.wui-table.wui-table-noborder-lr {  border-left: 0 none;  border-right: 0 none; }
+.wui-table.wui-table-noborder-lr td:last-child,
+.wui-table.wui-table-noborder-lr th:last-child {  border-right: 0 none; }
+
+/*内部元素无边框*/
+.wui-table.wui-table-item-noborder-lr td,
+.wui-table.wui-table-item-noborder-lr th {  border-right: 0 none; }
+
+/* 无边框table加上wui-table-noborder */
+.wui-table-noborder,
+.wui-table-noborder td,
+.wui-table-noborder tr,
+.wui-table-noborder th {  border: none;  outline: none; }
+.wui-table-noborder .wui-table-split,
+.wui-table-noborder .wui-table-hover {  background-color: #f7f7f7; }
+
+/* 当table放在一个有边框的容器中时，比如wui-box，需要添加类名wui-table-inbox去掉本身的外框 */
+.wui-table-inbox {  border: none;  outline: none; }
+.wui-table-inbox td:last-child,
+.wui-table-inbox tr:last-child,
+.wui-table-inbox th:last-child {  border-right: 0 none; }
+.wui-table-inbox tr:last-child td {  border-bottom: 0 none; }
+
+/*表格的微调*/
+.wui-table-bar {  color: #666;  background-color: #F6F6F6;  padding: 7px 9px; }
+.wui-table .wui-table-subcon {  margin-top: 5px; }
+.wui-table td.wui-table-tar,
+.wui-table th.wui-table-tar {  text-align: right; }
+.wui-table .null-list {  text-align: center;  padding: 20px; }
+.wui-table .null-list .tip-icon {  color: #00AAEE;  font-size: 22px;  line-height: 22px; }
+.wui-table .table-tipbox-wrap {  padding: 0; }
+
+.wui-table-layout-fixed {  table-layout: fixed; }
+
+.wui-table .wui-list{position: relative;  margin: -9px; padding: 5px 0;}
+.wui-table .wui-list-item{border-bottom: 1px solid #d5d5d5;line-height: 2.2;padding:0 9px;}
+.wui-table .wui-list-item:last-child{border-bottom: 0 none;}
+.wui-table .wui-to-top{vertical-align: top;}
+
+/*表格分组*/
+.table-btn-group{ margin-top: 3px;}
+.table-btn-group .wui-button{ margin-top: 2px;}
+
+
+/*.vertical-align-middle{}*/
+.wui-table .check-td{text-align: center;}
+.wui-table .check-td input{vertical-align: middle;cursor: pointer;}
+/*微调宽度*/
+.w-2{width: 2%;}
+.w-3{width: 3%;}
+.w-4{width: 4%;}
+.w-5{width: 5%;}
+.w-6{width: 6%;}
+.w-7{width: 7%;}
+.w-8{width: 8%;}
+.w-9{width: 9%;}
+.w-11{width: 11%;}
+.w-12{width: 12%;}
+.w-13{width: 13%;}
+.w-14{width: 14%;}
+.w-15{width: 15%;}
+.w-16{width: 16%;}
+.w-17{width: 17%;}
+.w-18{width: 18%;}
+.w-19{width: 19%;}
+.w-22{width: 22%;}
+.w-10{width: 10%;}
+.w-20{width: 20%;}
+.w-25{width: 25%;}
+.w-33{width: 33.33333%;}
+.w-50{width: 50%;}
+.w-60{width: 60%;}
+.w-66{width: 66.66667%;}
+.w-70{width: 70%;}
+.w-75{width: 75%;}
+.w-80{width: 80%;}
+.w-90{width: 90%;}
+.w-100{width: 10%;}
+
+
+

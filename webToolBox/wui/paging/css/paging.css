@@ -1,0 +1,47 @@
+
+.wui-paging {  margin-top: 20px;  }
+.wui-paging, .wui-paging input.wui-paging-num {  color:#808080;  padding: 0;  zoom: 1;  font-size: 12px;  vertical-align: middle;  }
+.wui-paging.wui-paging-tac{  text-align: center;  }
+.wui-paging.wui-paging-tar{  text-align: right;  }
+.wui-paging:after {  clear: both;  content: " ";  display: block;  font-size: 0;  height: 0;  visibility: hidden;  }
+
+.wui-paging a, .wui-paging span,
+.wui-paging span.wui-paging-prev,
+.wui-paging span.wui-paging-next {  text-decoration:none;  color:#808080;  margin:0 3px;  display: inline-block;  *display: inline;  *zoom: 1;  vertical-align: middle;  height:22px;  line-height:22px;  }
+
+.wui-paging-prev,
+.wui-paging-next,
+.wui-paging-goto {  background-color: #f6f6f6;  padding:0 8px;  border: 1px solid #ccc;  border-radius: 3px;  }
+.wui-paging .wui-paging-goto{vertical-align: middle;   line-height: 20px; line-height: 22px\0;  margin-left: 5px;  height: 22px;}
+
+.wui-paging-prev:hover,
+.wui-paging-next:hover,
+.wui-paging-goto:hover {  border-color: #999;  color: #666;  }
+
+.wui-paging-prev:hover .iconfont,
+.wui-paging-next:hover .iconfont {  color: #666;  }
+
+.wui-paging .wui-paging-prev {  margin: 0 3px 0 0;  }
+.wui-paging .iconfont {  font-size: 12px;  color: #787878;  }
+
+.wui-paging a.wui-paging-item,.wui-paging span.wui-paging-item {  background-color:#f3f3f3;  font-weight:bold;  padding:0 8px;  border:none;  }
+
+.wui-paging a.wui-paging-current,.wui-paging span.wui-paging-current, .wui-paging a.wui-paging-item:hover {  color:#fff;  background:#ff9c00;  }
+
+a.wui-paging-prev:hover,
+a.wui-paging-next:hover {  text-decoration:none;  color:#666;  }
+
+.wui-paging-info {  line-height:24px;  margin-right:5px;  height:24px; vertical-align: middle;  }
+.wui-paging-total {  margin:0 15px 0 0; display: inline-block;  height: 24px;  line-height: 24px;  font-weight:400;  }
+.wui-paging-pagesize{ margin:0 15px 0 0; display: inline-block;  height: 24px;  line-height: 24px;  font-weight:400;}
+.wui-paging-pagesize select.wui-paging-pagesize-select{  }
+.wui-paging-ellipsis {  margin:0 5px;  line-height: 16px;  font-weight:bold;  }
+.wui-paging-which{display: inline-block;}
+.wui-paging-which input.wui-paging-num {  height: 20px;  line-height: 20px;  padding: 0 6px;  width:22px;  border:1px solid;  border-color:#aaa #d1d1d1 #d1d1d1 #aaa;  }
+.wui-paging-which input.wui-paging-num:hover {  border-color:#999;  color:#666;  }
+.wui-paging-bold {  font-weight:bold;  padding:0 8px;  }
+
+.wui-paging span.wui-paging-prev,
+.wui-paging span.wui-paging-next,
+.wui-paging span.wui-paging-prev .iconfont,
+.wui-paging span.wui-paging-next .iconfont {  color:#fff;  box-shadow:none;  background: #d4d4d4;  border-color: #d4d4d4;  filter: none;  }

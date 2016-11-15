@@ -1,0 +1,69 @@
+/* alice.tiptext 样式模块 */
+
+/**************** iconfont图标相关 ******************/
+.wui-tiptext {  margin: 0;  color: #4D4D4D;  position:relative;  font-size: 12px;  zoom:1;  }
+.wui-tiptext .iconfont {  font-size: 20px;  line-height: 1em;  text-shadow: 0 1px 0 #fff;  position: relative;  top: 2px;  margin-right: 2px;  }
+.wui-tiptext-icon {  display:inline-block;  *display:inline;  *zoom:1;  }
+.wui-tiptext-message .wui-tiptext-icon {  color: #68b5e2;  }
+.wui-tiptext-success .wui-tiptext-icon {  color: #b5de70;  }
+.wui-tiptext-error .wui-tiptext-icon {  color: #f17975;  }
+.wui-tiptext-warning .wui-tiptext-icon {  color: #ff9966;  }
+.wui-tiptext-question .wui-tiptext-icon {  color: #66cae2;  }
+.wui-tiptext-stop .wui-tiptext-icon {  color: #f17975;  }
+.wui-tiptext-wait .wui-tiptext-icon {  color: #d1a066;  }
+
+/**************** 区块相关的 ******************/
+.wui-tiptext-container {  padding: 8px 12px;  position:relative;  zoom:1;  }
+.wui-tiptext-follow {  padding-left: 25px;  }
+.wui-tiptext-container.wui-tiptext-container-noboder{ border:0 none !important;}
+.wui-tiptext-container-message {  border: 1px solid #b2e2ea;  background: #e5f2f8;  }
+.wui-tiptext-container-success {  background: #E7FFCE;  border: 1px solid #B9E2A0;  }
+.wui-tiptext-container-error {  background: #FDEEE9;  border: 1px solid #fadcd3;  }
+.wui-tiptext-container-warning {  background: #fefea4;  border: 1px solid #e6e098;  }
+.wui-tiptext-container-question {  border: 1px solid #b2e2ea;  background: #e0f4ff;  }
+.wui-tiptext-container-stop {  background: #FDEEE9;  border: 1px solid #fadcd3;  }
+.wui-tiptext-container-wait{  border: 1px solid #fae3cc;  background: #FFF9D9;  }
+
+/**************** 箭头相关的 ******************/
+.wui-tiptext-arrowup, .wui-tiptext-arrowup em, .wui-tiptext-arrowup span,
+.wui-tiptext-arrowright, .wui-tiptext-arrowright em, .wui-tiptext-arrowright span,
+.wui-tiptext-arrowleft, .wui-tiptext-arrowleft em, .wui-tiptext-arrowleft span,
+.wui-tiptext-arrowdown, .wui-tiptext-arrowdown em, .wui-tiptext-arrowdown span {
+    position: absolute;  font-size: 14px;  font-family: "SimSun";  font-style: normal;  line-height: 1;  }
+
+.wui-tiptext-arrowup,
+.wui-tiptext-arrowright,
+.wui-tiptext-arrowleft,
+.wui-tiptext-arrowdown {  height: 10px;  width: 16px;  }
+
+.wui-tiptext-arrowup {  left: 32px;  top:-7px;  }
+.wui-tiptext-arrowup em {  top: -1px;  }
+.wui-tiptext-arrowright {  right: -9px;  top:10px;  }
+.wui-tiptext-arrowright em {  left:1px;  }
+
+.wui-tiptext-arrowdown {  left: 32px;  bottom: -3px;  }
+.wui-tiptext-arrowdown em {  top: 1px;  }
+.wui-tiptext-arrowleft {  left: -6px;  top:10px;  }
+.wui-tiptext-arrowleft em {  left:-1px;  }
+/* arrow color*/
+.wui-tiptext-container-message  .wui-tiptext-arrow em {  color:#b2e2ea;  }
+.wui-tiptext-container-message  .wui-tiptext-arrow span {  color:#e5f2f8;  }
+.wui-tiptext-container-success  .wui-tiptext-arrow em {  color:#E1E1CA;  }
+.wui-tiptext-container-success  .wui-tiptext-arrow span {  color:#edfed0;  }
+.wui-tiptext-container-error    .wui-tiptext-arrow em {  color:#fadcd3;  }
+.wui-tiptext-container-error    .wui-tiptext-arrow span {  color:#FDEEE9;  }
+.wui-tiptext-container-warning  .wui-tiptext-arrow em {  color:#e6e098;  }
+.wui-tiptext-container-warning  .wui-tiptext-arrow span {  color:#fefea4;  }
+.wui-tiptext-container-question .wui-tiptext-arrow em {  color:#b2e2ea;  }
+.wui-tiptext-container-question .wui-tiptext-arrow span {  color:#e0f4ff;  }
+.wui-tiptext-container-stop     .wui-tiptext-arrow em {  color:#fadcd3;  }
+.wui-tiptext-container-stop     .wui-tiptext-arrow span {  color:#FDEEE9;  }
+.wui-tiptext-container-wait     .wui-tiptext-arrow em {  color:#fae3cc;  }
+.wui-tiptext-container-wait     .wui-tiptext-arrow span {  color:#FFF9D9;  }
+
+/**************** 关闭按钮 ******************/
+.wui-tiptext-close {  position: absolute;  right: 10px;  top: -2px;  color: #60A2C5;  cursor: pointer;  }
+
+/**************** 去除边框 ******************/
+.wui-tiptext-noborder{border:0 none !important;}
+.wui-tiptext-noborder .wui-tiptext-arrow em{    top: 0; left: 0; }

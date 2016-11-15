@@ -1,0 +1,54 @@
+/**************** 水平的导航 ******************/
+.tab-primary-navs{line-height: 40px; position:relative;background-color: #eaeaea;border-top: 1px solid #e5e5e5;}
+.tab-primary-navs .tab-primary-nav-item{float:left;  position:relative;}
+.tab-primary-navs:before { content: "";  display: table;  }
+.tab-primary-navs:after { content: "";  display: table; clear: both;  }
+.tab-primary-navs .tab-primary-nav-item a{display: block; padding: 0 30px; border-right: 1px solid #e5e5e5;line-height: 44px; font-size: 14px;  height: 44px;    color: #222;}
+.tab-primary-navs .tab-primary-nav-item a:hover{  background-color:#f2f2f2;  text-decoration: none;}
+.tab-primary-navs .tab-primary-nav-item a.selected{  background-color:#FFFFFF;margin-bottom: -1px;}
+
+/**************** 水平的二级导航 ******************/
+.tab-secondary-navs {line-height: 46px;border-bottom: 1px solid #e7e7eb;height: 48px}
+.tab-secondary-nav-item {  float: left;font-size: 14px;margin-bottom: -1px; text-align: center;}
+.tab-secondary-navs .tab-secondary-nav-item a {padding: 0 20px; display: block; height: 46px;  text-decoration: none;color: #222;}
+.tab-secondary-navs .selected ,
+.tab-secondary-navs .tab-secondary-nav-item a.selected:hover{background: 0;border-bottom: 3px solid #44b549}
+.tab-secondary-navs .tab-secondary-nav-item a:hover {border-bottom: 3px solid #a0a3ab}
+
+/**************** 水平的tab标签 ******************/
+.wui-tab {  margin: 0;  padding: 0;  }
+.wui-tab ul {  list-style: none;  margin: 0;  padding: 0;  }
+.wui-tab li {  list-style: none;  vertical-align: top;  position: relative;  top: 1px;  }
+.wui-tab-items {  border-bottom: 1px solid #E5E5E5;  font-size: 14px;  }
+.wui-tab-item {  display: inline-block;  display: inline\0; /* fix https://github.com/aliceui/tab/issues/1 */  *display: inline;  *zoom: 1;  *margin-right: 4px;  }
+.wui-tab-item a {  border-radius: 3px 3px 0 0;  background: #fff;  line-height: 32px;  height: 32px;  padding: 0 10px;  border: 1px solid #E5E5E5;
+    border-bottom: none;  color: #4D4D4D;  display: inline-block;  *display: inline;  *zoom: 1;  transition: background-color 0.4s ease-out, color 0.4s ease-out;  }
+.wui-tab-item a,
+.wui-tab-item a:hover,
+.wui-tab-item a:active {  color: #4D4D4D;  }
+.wui-tab-item-current a {  font-weight: bold;  height: 33px;  }
+.wui-tab-item a:hover {  background: #f6f6f6;  text-decoration: none;  }
+.wui-tab-item-current a:hover {  background: #fff;  }
+.wui-tab.wui-tab-s .wui-tab-items{  font-size: 12px;}
+.wui-tab.wui-tab-s .wui-tab-item a{line-height: 28px;  height: 28px;  padding: 0 6px;}
+.wui-tab.wui-tab-s .wui-tab-item-current a {  font-weight: bold;  height: 29px;  }
+
+/**************** 垂直的导航 ******************/
+.menu{width: 208px;  min-width: 208px; /*border-right: 1px solid #D7D8DE;*/min-height: 1px;background-color:#3d3d3d; }
+.menu-item{border-top: 1px solid #4a4a4a;}
+.menu-item .menu-title {position: relative;font-size: 14px; width: auto;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;line-height: 38px;color: #e1e1e1;}
+.menu-item .menu-title h3{padding-left: 20px;padding-right:10px;}
+.menu-item .menu-title .iconfont{display: inline-block;width: 24px;text-align: center; }
+.menu-item  a {font-size: 14px;display: block;padding-left: 20px;width: auto;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;color: #bdbdbd;line-height: 38px;}
+.menu-item  .menu-sub a{ padding: 0 0 0 48px;}
+.menu-item a:hover {background: #474747 !important;}
+.menu-item a:hover {text-decoration: none}
+.menu-item a.active,.menu-item  a.active:hover{background-color: #FF8800 !important;color: #FFFFFF;}
+
+/**************** 底部的导航 ******************/
+#footer{  padding: 24px 0;color: #999999;text-align: center;background-color: #d8d8dc;  border-top: 1px solid #d9dadc;}
+#footer .links .links-item{display: inline-block;vertical-align: middle;padding: 0 1em;line-height: 1em;border-left: 1px solid #d9dadc;}
+#footer .links .no-extra {border-left-width: 0;}
+#footer .links-item a {color: #999999}
+#footer .links-item a:hover {color: #666666}
+

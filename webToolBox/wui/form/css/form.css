@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* alice.form 样式模块 */
+
+/**************** wui-label  ******************/
+.wui-label {  float: left;  width: 170px;  margin-left: -180px;  padding-top: 5px;  text-align: right;  font-size: 14px; }
+.wui-form-detaillist .wui-label {  color: #8d8d8d; }/*改变键的颜色，推荐放在form上*/
+.wui-form-required {  color: #FF0000;  font-family: SimSun;  font-size: 14px;  margin-right: 6px; }/*必填项的星号标志*/
+
+/**************** wui-input  ******************/
+.wui-input {  padding: 7px 9px;  line-height: 18px;  border: 1px solid #c1c1c1;  color: #595959;  font-size: 12px;  vertical-align: middle;  border-radius: 3px; }
+.wui-input.wui-input-l {  width: 300px; }
+.wui-input.wui-input-xl {  width: 350px; }
+.wui-input.wui-input-xxl {  width: 400px; }
+.wui-input.wui-input-xxxl {  width: 500px; }
+.wui-input.wui-input-m {  width: 200px; }
+.wui-input.wui-input-mm {  width: 130px; }
+.wui-input.wui-input-sm {  width: 100px; }
+.wui-input.wui-input-xsm {  width: 80px; }
+.wui-input.wui-input-xxsm {  width: 60px; }
+.wui-input.wui-input-xxxsm {  width: 40px; }
+.wui-input.wui-input-s {  padding: 5px 9px; }/*上下边距比其它input小*/
+.wui-input-checkcode {  width: 100px;  height: 24px;  line-height: 28px;  margin: 0;  padding: 2px 5px; }/*上下边距比其它input小*/
+
+/**************** wui-textarea  ******************/
+.wui-textarea {  line-height: 15px;  border: 1px #c1c1c1 solid;  padding: 7px 9px;  overflow: auto;  font-family: Arial;  font-size: 12px;  width: 300px;  height: 50px;  border-radius: 3px; }
+.wui-textarea.wui-input-l {  width: 300px; }
+.wui-textarea.wui-input-xl {  width: 350px; }
+.wui-textarea.wui-input-xxl {  width: 400px; }
+.wui-textarea.wui-input-xxxl {  width: 500px; }
+.wui-form .wui-textarea.wui-textarea-l {  width: 580px;  height: 60px; }
+
+/**************** wui-textarea 和 wui-input 的disabled、readonly、hover、focus样式 ******************/
+.wui-input[disabled],
+.wui-textarea[disabled] {  border: 1px solid #ccc;  background: #f2f2f2; }
+.wui-input:disabled,
+.wui-textarea:disabled {  border: 1px solid #ccc;  background: #f2f2f2; }
+.wui-input[readonly],
+.wui-textarea[readonly] {  border: 1px solid #ccc;  background: #f2f2f2; }
+.wui-input:hover,
+.wui-textarea:hover,
+.wui-input-hover {  border: 1px #aaaaaa solid;  border-top-color: #808080; }
+.wui-input:focus,
+.wui-textarea:focus,
+.wui-input-focus {  border: 1px #07f solid;  box-shadow: 0 0 3px #8cddff;  color: #595959; }
+.placeholder {  color: #ccc; }/*可以用于改变输入框的默认显示的样式，或者改变文本的颜色*/
+
+/**************** 设置 wui-textarea 、 wui-input 和 说明文字 默认显示为hover、focus、样式(只是外观，没有对应属性) ******************/
+.wui-form-item-hover .wui-input,
+.wui-form-item-hover .wui-textarea {  border: 1px #727272 solid; }
+.wui-form-item-focus .wui-input,
+.wui-form-item-focus .wui-textarea {  border: 1px #07f solid;  box-shadow: 0 0 3px #8cddff; }
+.wui-form-item-focus .wui-form-explain,
+.wui-form-item-hover .wui-form-explain {  color: #333; }
+
+/**************** 复选框，单选框，下拉选择 ******************/
+input.wui-checkbox {  vertical-align: baseline; }
+.wui-checkbox-label{  cursor: pointer;  }
+.wui-form-inputcon {  display: inline-block;  margin-top: 6px;  *display: inline;  *zoom: 1; }
+.wui-form-inputcon label {  margin-right: 20px;  cursor: pointer;  }
+.wui-form .wui-radio {  margin-right: 3px;  vertical-align: middle; }
+
+/**************** 表单 常用文字 ******************/
+.wui-form-text {  display: inline-block;  margin-top: 6px;  font-size: 14px;  *display: inline;  *zoom: 1; }
+.wui-form-explain {  margin: 0;  padding: 0 0 8px;  font-size: 12px;  color: #B2B2B2; }
+.wui-form-prompt {  margin: 0;  padding: 8px 0 0;  font-size: 12px;  color: #B2B2B2; }
+.wui-form-other {  margin-left: 8px;  color: #999999; }
+
+/**************** form标签相关的类名 ******************/
+.wui-form {  font-size: 12px;  line-height: 1.5; }
+.wui-form.wui-form-detaillist {  font-size: 14px; }
+.wui-form, .wui-form * {  list-style: none; }
+.wui-form fieldset {  border: 0;}
+.wui-form-fieldeset{   padding: 15px;}
+.wui-form legend {  display: none; }
+
+.wui-form-item:after {  clear: both;  content: '.';  display: block;  height: 0;  visibility: hidden; }
+.wui-form-item {  padding: 0 5px 20px 170px;  zoom: 1; }
+.wui-form-item .wui-button.wui-button-xl {  padding: 0 40px; }
+.wui-form-item .wui-button.wui-button-l {  padding: 0 40px; }
+.wui-form-item select {  vertical-align: middle;  margin: 4px 0 0; }
+.wui-form-item input {  vertical-align: middle; }
+.wui-form-item .wui-input {  color: #595959;  vertical-align: middle;  *vertical-align: -5px; }
+
+.wui-form .wui-form-item {  padding-bottom: 10px; }
+.wui-form .wui-form-item.wui-form-item-bg {  background: #F4F5F9;  padding-top: 10px; }
+
+/**************** 大号 wui-input ******************/
+.wui-form-large .wui-input {  font-size: 14px;  height: 18px;  line-height: 18px;  padding: 11px 10px; }
+.wui-form-large .wui-input {  padding-top: 12px; }
+
+/**************** 垂直 显示 表单 ******************/
+.wui-form.wui-form-vertical .wui-form-item {  padding: 0 5px 20px 0; }
+.wui-form.wui-form-vertical .wui-form-item.wui-form-btncenter {  text-align: center; }
+.wui-form.wui-form-vertical .wui-label {  display: block;  float: none;  width: auto;  text-align: left; margin-left: 0;  margin-bottom: 6px; }
+.wui-form.wui-form-vertical .wui-label .wui-sub-label {  font-size: 12px;  color: #999999; }
+.wui-form.wui-form-vertical .wui-label small {  margin-left: 10px;  color: #999999; }
+.wui-form label .wui-label-sub {  color: #999999 margin-left: 20px; }
+
+/**************** 表单 标题 ******************/
+.wui-form fieldset legend.fieldset-legend {  display: block;  width: 100%;  font-size: 14px;  font-weight: 700;  height: 40px;  line-height: 40px;  padding: 15px 0 0;  border: 0 none;  border-bottom: 1px dotted #ccc;  margin-bottom: 10px; }
+.wui-form fieldset legend.fieldset-legend-first {  display: block;  width: 100%;  font-size: 14px;  font-weight: 700;  height: 40px;  line-height: 40px;  border: 0 none;  border-bottom: 1px dotted #ccc;  margin-bottom: 10px; }
+.wui-form fieldset legend small {  margin-left: 20px;  margin-right: 20px;  color: #999999;  font-weight: 400; }
+.wui-form fieldset legend.fieldset-legend .wui-form-sublegend {  margin-left: 20px; }
+.wui-form fieldset legend.fieldset-legend-first .wui-form-sublegend {  margin-left: 20px; }
+.wui-form .wui-fieldset-con {  padding-left: 20px; }
+
+/**************** 表单 下拉选择 ******************/
+.wui-form .wui-form-select {  padding: 2px;  margin-top: 0;  line-height: 34px;  height: 34px;  vertical-align: middle;  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);  background-color: #fff;  color: #32373c;  outline: 0;  -webkit-transition: .05s border-color ease-in-out;  transition: .05s border-color ease-in-out; }
+.wui-form .wui-form-select-m {  padding: 2px;  margin-top: 0;  line-height: 24px;  height: 24px;  vertical-align: middle;  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);  background-color: #fff;  color: #32373c;  outline: 0;  -webkit-transition: .05s border-color ease-in-out;  transition: .05s border-color ease-in-out; }
+.wui-form select[disabled] {  border: 1px solid #ccc;  background: #f2f2f2; }
+.wui-form select:disabled {  border: 1px solid #ccc;  background: #f2f2f2; }
+.wui-form-selector {  padding: 2px;  line-height: 32px;  height: 32px;  vertical-align: middle;  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);  background-color: #fff;  color: #32373c;  outline: 0;  -webkit-transition: .05s border-color ease-in-out;  transition: .05s border-color ease-in-out;  cursor: pointer;  }
+
+/**************** 表单的分组 ******************/
+.wui-form .wui-form-group:not(:last-child) {  margin-bottom: 10px; }
+.wui-form .wui-form-group .wui-form-group-title {  background-color: #e7e7e7; }
+.wui-form .wui-form-group-title label {  display: block;  height: 40px;  line-height: 40px;  padding-left: 20px;  cursor: pointer;  font-size: 14px;  font-weight: 700; }
+.wui-form .wui-form-group-title label small {  margin-left: 10px;  color: #777777; }
+.wui-form .wui-form-group-con {  padding-left: 20px;  padding-top: 10px; }
+
+/**************** 表单按钮区域 ******************/
+.wui-form .wui-fieldset-con-btns {  padding-left: 20px; border-top:1px dotted #ccc; padding-top: 10px; }
+.wui-form .wui-fieldset-con-btns .wui-button-l{padding: 0 40px;}
+
+.wui-form .wui-form-controls .wui-form-controls-group:not(:first-child) {  margin-top: 10px; }
+.wui-form .wui-form-controls .wui-form-controls-group-con {  margin-top: 8px;  margin-left: 18px; }
+/*.wui-form .wui-form-label-vertical label {  display: block;  margin-bottom: 10px; }*/
+
+/**************** wui-form-item-error 相关的 ******************/
+.wui-form-item-error .wui-input,
+.wui-form-item-error .wui-textarea {  border: 1px #F00 solid;  color: #F00; }
+.wui-form-item-error .wui-input-reset {  border: 1px #9C9C9C solid;  color: #000; }
+.wui-form-item-error .wui-form-explain {  color: #FF5243; }
+.wui-form-item-error .wui-form-explain .iconfont {  font-size: 16px; }
+.wui-form-item-error .wui-form-select {  padding: 2px;  line-height: 32px;  height: 32px;  vertical-align: middle;  border: 1px solid #f00;  -webkit-box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);  box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);  background-color: #ffeeee;  color: #32373c;  outline: 0;  -webkit-transition: .05s border-color ease-in-out;  transition: .05s border-color ease-in-out; }
+.wui-form-item-error .wui-form-select-m {  padding: 2px;  line-height: 24px;  height: 24px;  vertical-align: middle;  border: 1px solid #f00;  -webkit-box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);  box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);  background-color: #ffeeee;  color: #32373c;  outline: 0;  -webkit-transition: .05s border-color ease-in-out;  transition: .05s border-color ease-in-out; }
+
+/**************** for dialog 相关的 ******************/
+.wui-form-dia-bottom-btns{  padding: 16px 0;  text-align: center;  background-color:#F4F5F9;  }
+.wui-form-dia-bottom-btns .wui-button{  padding: 0 40px; }
+

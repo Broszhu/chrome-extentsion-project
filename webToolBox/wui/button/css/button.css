@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/**************** 通用设置 ******************/
+.wui-button * {  margin: 0;  padding: 0; }
+.wui-button {  display: inline-block;  *display: inline;  text-align: center;  text-decoration: none;  vertical-align: middle;
+  cursor: pointer;  font-size: 14px;  font-family: inherit;
+  /* Correct font family not being inherited in all browsers for <button> <input> */
+  font-weight: bold;  *zoom: 1;  *overflow: visible;
+  /* for a ie6/7 bug http://blog.csdn.net/jyy_12/article/details/6636099 */
+  background-image: none;
+  /* for old alice button style conflict */
+  border: 1px solid transparent; }
+.wui-button .wui-button-text {  background: none;  padding: 0;  height: auto;  line-height: auto; }
+.wui-button:hover {  text-decoration: none;  background-image: none; /* for old alice button style conflict */  outline: 0; }
+input.wui-button-text, button.wui-button-text {  *vertical-align: top; /* for a ie7 bug */ }
+.wui-button:visited, .wui-button:focus {  outline: 0; }
+.wui-button:active {  position: relative;  top: 1px;  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);  outline: 0; /*box-shadow: 1px 1px 3px #999 inset;*/ }
+
+/**************** 按钮的颜色 ******************/
+.wui-button-red {  color: #FFFFFF;  border: 1px solid #df4400;  background-color: #ff4e00; }
+.wui-button-red:hover {  color: #FFFFFF;  border: 1px solid #c63d00;  background-color: #e74700; }
+.wui-button-red.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-red.wui-button-label:hover {  color: #FFFFFF;  border: 1px solid #df4400;  background-color: #ff4e00; }
+.wui-button-red.disabled, .wui-button-red[disabled], fieldset[disabled] .wui-button-red,
+.wui-button-red.disabled:focus, .wui-button-red[disabled]:focus, fieldset[disabled] .wui-button-red:focus, .wui-button-red.disabled:active,
+.wui-button-red[disabled]:active, fieldset[disabled] .wui-button-red:active, .wui-button-red.disabled.active, .wui-button-red[disabled].active,
+fieldset[disabled] .wui-button-red.active {  opacity: 0.45;  filter: alpha(opacity=45); }
+
+.wui-button-purple {  color: #FFFFFF;  border: 1px solid #8244AE;  background-color: #9C80C9; }
+.wui-button-purple:hover {  color: #FFFFFF;  border: 1px solid #8244AE;  background-color: #B099D4; }
+.wui-button-purple.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-purple.wui-button-label:hover {  color: #FFFFFF;  border: 1px solid #8244AE;  background-color: #9C80C9; }
+.wui-button-purple.disabled, .wui-button-purple[disabled], fieldset[disabled] .wui-button-purple, .wui-button-purple.disabled:focus, .wui-button-purple[disabled]:focus, fieldset[disabled] .wui-button-purple:focus, .wui-button-purple.disabled:active, .wui-button-purple[disabled]:active, fieldset[disabled] .wui-button-purple:active, .wui-button-purple.disabled.active, .wui-button-purple[disabled].active, fieldset[disabled] .wui-button-purple.active {
+    opacity: 0.45;  filter: alpha(opacity=45); }
+
+.wui-button-blue {  color: #fff;  border: 1px solid #0099cc;  background-color: #00aaee; }
+.wui-button-blue:hover {  color: #fff;  border: 1px solid #0099cc;  background-color: #00a3d2; }
+.wui-button-blue.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-blue.wui-button-label:hover {  color: #fff;  border: 1px solid #0099cc;  background-color: #00aaee; }
+.wui-button-blue.disabled, .wui-button-blue[disabled], fieldset[disabled] .wui-button-blue, .wui-button-blue.disabled:focus, .wui-button-blue[disabled]:focus, fieldset[disabled] .wui-button-blue:focus, .wui-button-blue.disabled:active, .wui-button-blue[disabled]:active, fieldset[disabled] .wui-button-blue:active, .wui-button-blue.disabled.active, .wui-button-blue[disabled].active, fieldset[disabled] .wui-button-blue.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+
+.wui-button-orange {  color: #fff;  border: 1px solid #d66500;  background-color: #f57403; }
+.wui-button-orange:hover {  color: #fff;  border: 1px solid #d66500;  background-color: #fb8318; }
+.wui-button-orange.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-orange.wui-button-label:hover {  color: #fff;  border: 1px solid #d66500;  background-color: #f57403; }
+.wui-button-orange.disabled, .wui-button-orange[disabled], fieldset[disabled] .wui-button-orange, .wui-button-orange.disabled:focus, .wui-button-orange[disabled]:focus, fieldset[disabled] .wui-button-orange:focus, .wui-button-orange.disabled:active, .wui-button-orange[disabled]:active, fieldset[disabled] .wui-button-orange:active, .wui-button-orange.disabled.active, .wui-button-orange[disabled].active, fieldset[disabled] .wui-button-orange.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+
+.wui-button-green {  color: #fff;  border: 1px solid #379000;  background-color: #4BB402; }
+.wui-button-green:hover {  color: #fff;  border: 1px solid #379000;  background-color: #66BC2A; }
+.wui-button-green.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-green.wui-button-label:hover {  color: #fff;  border: 1px solid #379000;  background-color: #4BB402; }
+.wui-button-green.disabled, .wui-button-green[disabled], fieldset[disabled] .wui-button-green, .wui-button-green.disabled:focus, .wui-button-green[disabled]:focus, fieldset[disabled] .wui-button-green:focus, .wui-button-green.disabled:active, .wui-button-green[disabled]:active, fieldset[disabled] .wui-button-green:active, .wui-button-green.disabled.active, .wui-button-green[disabled].active, fieldset[disabled] .wui-button-green.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+
+.wui-button-white {  color: #777;  border: 1px solid #cfcfcf;  background-color: #f3f3f3; }
+.wui-button-white:hover {  color: #676d70;  border: 1px solid #adadad;  background-color: #fcfbfb; }
+.wui-button-white.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-white.wui-button-label:hover {  color: #777;  border: 1px solid #cfcfcf;  background-color: #f3f3f3; }
+.wui-button-white.disabled, .wui-button-white[disabled], fieldset[disabled] .wui-button-white, .wui-button-white.disabled:focus, .wui-button-white[disabled]:focus, fieldset[disabled] .wui-button-white:focus, .wui-button-white.disabled:active, .wui-button-white[disabled]:active, fieldset[disabled] .wui-button-white:active, .wui-button-white.disabled.active, .wui-button-white[disabled].active, fieldset[disabled] .wui-button-white.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+
+.wui-button-gray {  color: #676d70;  border: 1px solid #cfcfcf;  background-color: #E1E1E1; }
+.wui-button-gray:hover {  color: #676d70;  border: 1px solid #cfcfcf;  background-color: #E9E9E9; }
+.wui-button-gray.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-gray.wui-button-label:hover {  color: #676d70;  border: 1px solid #cfcfcf;  background-color: #E1E1E1; }
+.wui-button-gray.disabled, .wui-button-gray[disabled], fieldset[disabled] .wui-button-gray, .wui-button-gray.disabled:focus, .wui-button-gray[disabled]:focus, fieldset[disabled] .wui-button-gray:focus, .wui-button-gray.disabled:active, .wui-button-gray[disabled]:active, fieldset[disabled] .wui-button-gray:active, .wui-button-gray.disabled.active, .wui-button-gray[disabled].active, fieldset[disabled] .wui-button-gray.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+
+/**************** 没有背景的按钮颜色 ******************/
+.wui-button-blue-nobg {  color: #00aaee;  border: 1px solid #0099cc;  background-color: #fff; }
+.wui-button-blue-nobg:hover {  color: #00a3d2;  border: 1px solid #0099cc;  background-color: #fff; }
+.wui-button-blue-nobg.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-blue-nobg.wui-button-label:hover {  color: #00aaee;  border: 1px solid #0099cc;  background-color: #fff; }
+.wui-button-blue-nobg.disabled, .wui-button-blue-nobg[disabled], fieldset[disabled] .wui-button-blue-nobg, .wui-button-blue-nobg.disabled:focus, .wui-button-blue-nobg[disabled]:focus, fieldset[disabled] .wui-button-blue-nobg:focus, .wui-button-blue-nobg.disabled:active, .wui-button-blue-nobg[disabled]:active, fieldset[disabled] .wui-button-blue-nobg:active, .wui-button-blue-nobg.disabled.active, .wui-button-blue-nobg[disabled].active, fieldset[disabled] .wui-button-blue-nobg.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+
+.wui-button-orange-nobg {  color: #f57403;  border: 1px solid #d66500;  background-color: #fff; }
+.wui-button-orange-nobg:hover {  color: #fb8318;  border: 1px solid #d66500;  background-color: #fff; }
+.wui-button-orange-nobg.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-orange-nobg.wui-button-label:hover {  color: #f57403;  border: 1px solid #d66500;  background-color: #fff; }
+.wui-button-orange-nobg.disabled, .wui-button-orange-nobg[disabled], fieldset[disabled] .wui-button-orange-nobg, .wui-button-orange-nobg.disabled:focus, .wui-button-orange-nobg[disabled]:focus, fieldset[disabled] .wui-button-orange-nobg:focus, .wui-button-orange-nobg.disabled:active, .wui-button-orange-nobg[disabled]:active, fieldset[disabled] .wui-button-orange-nobg:active, .wui-button-orange-nobg.disabled.active, .wui-button-orange-nobg[disabled].active, fieldset[disabled] .wui-button-orange-nobg.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+
+.wui-button-green-nobg {  color: #4BB402;  border: 1px solid #379000;  background-color: #fff; }
+.wui-button-green-nobg:hover {  color: #66BC2A;  border: 1px solid #379000;  background-color: #fff; }
+.wui-button-green-nobg.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-green-nobg.wui-button-label:hover {  color: #4BB402;  border: 1px solid #379000;  background-color: #fff; }
+.wui-button-green-nobg.disabled, .wui-button-green-nobg[disabled], fieldset[disabled] .wui-button-green-nobg, .wui-button-green-nobg.disabled:focus, .wui-button-green-nobg[disabled]:focus, fieldset[disabled] .wui-button-green-nobg:focus, .wui-button-green-nobg.disabled:active, .wui-button-green-nobg[disabled]:active, fieldset[disabled] .wui-button-green-nobg:active, .wui-button-green-nobg.disabled.active, .wui-button-green-nobg[disabled].active, fieldset[disabled] .wui-button-green-nobg.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+
+.wui-button-white-nobg {  color: #777;  border: 1px solid #cfcfcf;  background-color: #fff; }
+.wui-button-white-nobg:hover {  color: #676d70;  border: 1px solid #adadad;  background-color: #fff; }
+.wui-button-white-nobg.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-white-nobg.wui-button-label:hover {  color: #777;  border: 1px solid #cfcfcf;  background-color: #fff; }
+.wui-button-white-nobg.disabled, .wui-button-white-nobg[disabled], fieldset[disabled] .wui-button-white-nobg, .wui-button-white-nobg.disabled:focus, .wui-button-white-nobg[disabled]:focus, fieldset[disabled] .wui-button-white-nobg:focus, .wui-button-white-nobg.disabled:active, .wui-button-white-nobg[disabled]:active, fieldset[disabled] .wui-button-white-nobg:active, .wui-button-white-nobg.disabled.active, .wui-button-white-nobg[disabled].active, fieldset[disabled] .wui-button-white-nobg.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+
+.wui-button-gray-nobg {  color: #676d70;  border: 1px solid #cfcfcf;  background-color: #fff; }
+.wui-button-gray-nobg:hover {  color: #676d70;  border: 1px solid #cfcfcf;  background-color: #fff; }
+.wui-button-gray-nobg.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-gray-nobg.wui-button-label:hover {  color: #676d70;  border: 1px solid #cfcfcf;  background-color: #fff; }
+.wui-button-gray-nobg.disabled, .wui-button-gray-nobg[disabled], fieldset[disabled] .wui-button-gray-nobg, .wui-button-gray-nobg.disabled:focus, .wui-button-gray-nobg[disabled]:focus, fieldset[disabled] .wui-button-gray-nobg:focus, .wui-button-gray-nobg.disabled:active, .wui-button-gray-nobg[disabled]:active, fieldset[disabled] .wui-button-gray-nobg:active, .wui-button-gray-nobg.disabled.active, .wui-button-gray-nobg[disabled].active, fieldset[disabled] .wui-button-gray-nobg.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+
+.wui-button-red-nobg {  color: #ff4e00;  border: 1px solid #df4400;  background-color: #fff; }
+.wui-button-red-nobg:hover {  color: #e74700;  border: 1px solid #c63d00;  background-color: #fff; }
+.wui-button-red-nobg.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-red-nobg.wui-button-label:hover {  color: #ff4e00;  border: 1px solid #df4400;  background-color: #fff; }
+.wui-button-red-nobg.disabled, .wui-button-red-nobg[disabled], fieldset[disabled] .wui-button-red-nobg, .wui-button-red-nobg.disabled:focus, .wui-button-red-nobg[disabled]:focus, fieldset[disabled] .wui-button-red-nobg:focus, .wui-button-red-nobg.disabled:active, .wui-button-red-nobg[disabled]:active, fieldset[disabled] .wui-button-red-nobg:active, .wui-button-red-nobg.disabled.active, .wui-button-red-nobg[disabled].active, fieldset[disabled] .wui-button-red-nobg.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+
+.wui-button-purple-nobg {  color: #9C80C9;  border: 1px solid #8244AE;  background-color: #fff; }
+.wui-button-purple-nobg:hover {  color: #B099D4;  border: 1px solid #8244AE;  background-color: #fff; }
+.wui-button-purple-nobg.wui-button-label {  font-weight: 400;  cursor: default; }
+.wui-button-purple-nobg.wui-button-label:hover {  color: #9C80C9;  border: 1px solid #8244AE;  background-color: #fff; }
+.wui-button-purple-nobg.disabled, .wui-button-purple-nobg[disabled], fieldset[disabled] .wui-button-purple-nobg, .wui-button-purple-nobg.disabled:focus, .wui-button-purple-nobg[disabled]:focus, fieldset[disabled] .wui-button-purple-nobg:focus, .wui-button-purple-nobg.disabled:active, .wui-button-purple-nobg[disabled]:active, fieldset[disabled] .wui-button-purple-nobg:active, .wui-button-purple-nobg.disabled.active, .wui-button-purple-nobg[disabled].active, fieldset[disabled] .wui-button-purple-nobg.active {
+    opacity: 0.45;
+    filter: alpha(opacity=45); }
+
+/**************** 各种尺寸的按钮 ******************/
+.wui-button {  height: 28px;  line-height: 28px;  padding-left: 18px;  padding-right: 18px;  font-size: 14px;  border-radius: 3px; }
+input.wui-button {  height: 30px;  line-height: 28px;  padding-left: 10px;  padding-right: 10px;  font-size: 14px;  border-radius: 3px; }
+button.wui-button {  height: 30px;  line-height: 26px;  padding-left: 10px;  padding-right: 10px;  font-size: 14px;  border-radius: 3px; }
+
+.wui-button-l {  height: 32px;  line-height: 32px;  padding-left: 16px;  padding-right: 16px;  font-size: 14px;  border-radius: 3px; }
+input.wui-button-l {  height: 34px;  line-height: 32px;  padding-left: 12px;  padding-right: 12px;  font-size: 14px;  border-radius: 3px; }
+button.wui-button-l {  height: 34px;  line-height: 30px;  padding-left: 16px;  padding-right: 16px;  font-size: 14px;  border-radius: 3px; }
+
+.wui-button-xl {  height: 36px;  line-height: 36px;  padding-left: 20px;  padding-right: 20px;  font-size: 16px;  border-radius: 4px; }
+input.wui-button-xl {  height: 38px;  line-height: 36px;  padding-left: 20px;  padding-right: 20px;  font-size: 16px;  border-radius: 4px; }
+button.wui-button-xl {  height: 38px;  line-height: 34px;  padding-left: 20px;  padding-right: 20px;  font-size: 16px;  border-radius: 4px; }
+
+.wui-button-m {  height: 26px;  line-height: 26px;  padding-left: 10px;  padding-right: 10px;  font-size: 14px;  border-radius: 3px; }
+input.wui-button-m {  height: 28px;  line-height: 26px;  padding-left: 10px;  padding-right: 10px;  font-size: 14px;  border-radius: 3px; }
+button.wui-button-m {  height: 28px;  line-height: 24px;  padding-left: 10px;  padding-right: 10px;  font-size: 14px;  border-radius: 3px; }
+
+.wui-button-s {  height: 22px;  line-height: 22px;  padding-left: 5px;  padding-right: 5px;  font-size: 12px;  border-radius: 3px; }
+input.wui-button-s {  height: 24px;  line-height: 22px;  padding-left: 5px;  padding-right: 5px;  font-size: 12px;  border-radius: 3px; }
+button.wui-button-s {  height: 24px;  line-height: 20px;  padding-left: 5px;  padding-right: 5px;  font-size: 12px;  border-radius: 3px; }
+
+.wui-button-xs {  height: 18px;  line-height: 18px;  padding-left: 3px;  padding-right: 3px;  font-size: 12px;  border-radius: 3px; }
+input.wui-button-xs {  height: 20px;  line-height: 18px;  padding-left: 3px;  padding-right: 3px;  font-size: 12px;  border-radius: 3px; }
+button.wui-button-xs {  height: 20px;  line-height: 16px;  padding-left: 3px;  padding-right: 3px;  font-size: 12px;  border-radius: 3px; }
+
+/**************** 无边框 ******************/
+.wui-button-noborder {  border: 0 none !important; }
