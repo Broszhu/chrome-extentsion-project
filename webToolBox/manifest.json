@@ -1,15 +1,22 @@
 {
-  "name":"Web Tool Box",
+  "name":"AutoBox 程序员工具箱",
   "version":"0.1",
   "manifest_version":2,
-  "description":"this is web tool box",
+  "description":"适合IT人用的便捷工具，欢迎提需求;",
+  "icons": {
+    "16": "./img/icon/icon16.png",
+    "48": "./img/icon/icon48.png",
+    "128": "./img/icon/icon128.png"
+  },
   "browser_action":{
-    "default_icon":"icon.png",
-    "default_title":"Web Tool Box",
+    "default_icon":{
+      "19": "./img/icon/icon19.png",
+      "38": "./img/icon/icon38.png"
+    },
+    "default_title":"AuotoBox：一款程序员工具箱",
     "default_popup":"popup.html"
   },
   "options_page": "popup.html",
   "permissions":[
   ]
-
 }
