@@ -22,6 +22,7 @@ html,body{min-width: 800px; min-height: 600px;overflow-x: hidden;}
 .main-nav .tab-primary-navs{ background-color: #eaeaea;display: block;}
 
 /*container*/
+/*.container .page-main-wrap{max-height: 450px;width: 670px;overflow: hidden;}*/
 .container .page-main{/*overflow:hidden;*/zoom: 1;padding: 10px 10px 10px;max-height: 450px;width: 670px;overflow:auto;}
 
 /*table*/

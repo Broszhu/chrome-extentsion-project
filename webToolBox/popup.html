@@ -32,32 +32,32 @@
         </div>
     </div>
     <div id="bodyer">
-        <div class="container">
+        <div class="container" id="page-popup">
             <div class="bodyer-side">
                 <ul class="menu">
                     <li class="menu-item">
                         <div class="menu-title">
-                            <a href="#" class="active">开发类</a>
+                            <a href="javascript:;" class="active">开发类</a>
                         </div>
                     </li>
                     <li class="menu-item">
                         <div class="menu-title">
-                            <a href="#">站长类</a>
+                            <a href="javascript:;" >站长类</a>
                         </div>
                     </li>
                     <li class="menu-item">
                         <div class="menu-title">
-                            <a href="#">极客类</a>
+                            <a href="javascript:;"  >极客类</a>
                         </div>
                     </li>
                     <li class="menu-item">
                         <div class="menu-title">
-                            <a href="#">其它</a>
+                            <a href="javascript:;"  >其它</a>
                         </div>
                     </li>
                     <li class="menu-item">
                         <div class="menu-title">
-                            <a href="#">软件推荐</a>
+                            <a href="javascript:;"  >软件推荐</a>
                         </div>
                     </li>
                 </ul>
@@ -74,13 +74,221 @@
                     </ul>
                 </div>
                 <!--头部和内容分割-->
-                <div class="page-main">
-                    <ul class="">
-                        <li class="box-one">
+                <div class="page-main-wrap">
+                    <ul class="page-main">
+                        <li class="tool-item">
                             <table class="wui-table">
                                 <thead>
                                 <tr>
                                     <th width="25%">开发类工具</th>
+                                    <th>介绍</th>
+                                    <th width="12%">操作</th>
+                                </tr>
+                                </thead>
+                                <!-- 表头可选 -->
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" title="这是一个站酷网站，啊啊啊啊啊啊啊啊" style="cursor: pointer;">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-JS"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">HTML转JavaScript</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>把HTML代码转为JS中可用的字符串</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-HTMLzhuanyi"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">HTML转义工具</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>把HTML代码转义，通常用于textarea内，或者富文本编辑器里</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-zhanweitupian"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">占位图片</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>占位图片、前端占位图片,可生成任意大小</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-markdown"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">html转markdown</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>把HTML代码转为markdown格式</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-zhengzebiaodashi"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">正则表达式</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>快捷生成正则表达式</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-CSS"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">CSS工具</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>在线css美化、格式化、压缩</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                        <use xlink:href="#icon-test"></use>
+                                                    </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">这是六个文字</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>在线css美化、格式化、压缩</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <!-- 表尾可选 -->
+                            </table>
+                        </li>
+                        <div><br/></div>
+                        <li class="tool-item">
+                            <table class="wui-table">
+                                <thead>
+                                <tr>
+                                    <th width="25%">站长类工具</th>
+                                    <th>介绍</th>
+                                    <th width="12%">操作</th>
+                                </tr>
+                                </thead>
+                                <!-- 表头可选 -->
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-who"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">whois查询</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>域名的信息查询（是否可以注册,当前所有者的联系方式,当前状态）</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <!-- 表尾可选 -->
+                            </table>
+                        </li>
+                        <div><br/></div>
+                        <li class="tool-item">
+                            <table class="wui-table">
+                                <thead>
+                                <tr>
+                                    <th width="25%">极客类工具</th>
                                     <th>介绍</th>
                                     <th width="12%">操作</th>
                                 </tr>
@@ -246,11 +454,11 @@
                             </table>
                         </li>
                         <div><br/></div>
-                        <li class="box-two">
+                        <li class="tool-item">
                             <table class="wui-table">
                                 <thead>
                                 <tr>
-                                    <th width="25%">站长类工具</th>
+                                    <th width="25%">其他工具</th>
                                     <th>介绍</th>
                                     <th width="12%">操作</th>
                                 </tr>
@@ -264,15 +472,147 @@
                                                 <div class="tool-wrap" style="">
                                                     <span class="tool-wrap-avatar">
                                                         <svg class="icon">
-                                                            <use xlink:href="#icon-who"></use>
+                                                            <use xlink:href="#icon-JS"></use>
                                                         </svg>
                                                     </span>
-                                                    <span class="tool-wrap-name">whois查询</span>
+                                                    <span class="tool-wrap-name">HTML转JavaScript</span>
                                                 </div>
                                             </li>
                                         </ul>
                                     </td>
-                                    <td>域名的信息查询（是否可以注册,当前所有者的联系方式,当前状态）</td>
+                                    <td>把HTML代码转为JS中可用的字符串</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-HTMLzhuanyi"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">HTML转义工具</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>把HTML代码转义，通常用于textarea内，或者富文本编辑器里</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-zhanweitupian"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">占位图片</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>占位图片、前端占位图片,可生成任意大小</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-markdown"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">html转markdown</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>把HTML代码转为markdown格式</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-zhengzebiaodashi"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">正则表达式</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>快捷生成正则表达式</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-CSS"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">CSS工具</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>在线css美化、格式化、压缩</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-test"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">测试变圆角</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>在线css美化、格式化、压缩</td>
                                     <td>
                                         <div class="table-btn-group">
                                             <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
@@ -283,9 +623,176 @@
                                 <!-- 表尾可选 -->
                             </table>
                         </li>
-                        <li class="box-three"></li>
-                        <li class="box-four"></li>
-                        <li class="box-five"></li>
+                        <div><br/></div>
+                        <li class="tool-item">
+                            <table class="wui-table">
+                                <thead>
+                                <tr>
+                                    <th width="25%">软件推荐</th>
+                                    <th>介绍</th>
+                                    <th width="12%">操作</th>
+                                </tr>
+                                </thead>
+                                <!-- 表头可选 -->
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-JS"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">HTML转JavaScript</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>把HTML代码转为JS中可用的字符串</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-HTMLzhuanyi"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">HTML转义工具</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>把HTML代码转义，通常用于textarea内，或者富文本编辑器里</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-zhanweitupian"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">占位图片</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>占位图片、前端占位图片,可生成任意大小</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-markdown"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">html转markdown</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>把HTML代码转为markdown格式</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-zhengzebiaodashi"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">正则表达式</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>快捷生成正则表达式</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-CSS"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">CSS工具</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>在线css美化、格式化、压缩</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul class="wui-list wui-list-nosquare">
+                                            <li class="wui-list-item wui-txt-muted">
+                                                <div class="tool-wrap" style="">
+                                                    <span class="tool-wrap-avatar">
+                                                        <svg class="icon">
+                                                            <use xlink:href="#icon-test"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tool-wrap-name">测试变圆角</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>在线css美化、格式化、压缩</td>
+                                    <td>
+                                        <div class="table-btn-group">
+                                            <a href="javascript:;" class="wui-button wui-button-blue wui-button-s "><i class="iconfont wui-txt-sm">&#xe647;</i> 进入</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <!-- 表尾可选 -->
+                            </table>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -300,5 +807,6 @@
 </div>
 <script src="./lib/jquery/jquery-1.11.2.min.js"></script>
 <script src="./lib/seajs/sea.js"></script>
+<script src="./src/popup.js"></script>
 </body>
 </html>
