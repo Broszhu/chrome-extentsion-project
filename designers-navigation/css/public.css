@@ -2,14 +2,12 @@ html,body{min-width: 800px; min-height: 600px;overflow-x: hidden;overflow-y: hid
 /*header*/
 #page{min-width: 800px; }
 #header{height: 60px;  min-width: 800px;   /*border-top: 2px solid #2d0e14;*/ background-color:#1F1F1F;}
-#header .logo {  float: left;padding-left: 0;background-color: #ff4400;height: 60px;width: 108px;text-align: center;line-height: 60px;}
-#header .logo-right {  position: absolute;right: 0;top: 0;}
 #header .inner-wrp{overflow:hidden; }
-#header .logo a {display: block;height: 24px;font-size: 18px;color:#FFFFFF; }
-#header .logo a:hover {text-decoration: none;}
-#header .logo a .iconfont{color:#FFFFFF; }
-#header .page-title-wrap{height: 60px;  color: #FFFFFF;padding-left: 20px;width: 585px;}
-#header .page-title-wrap h2{line-height: 60px; font-size: 18px; text-align: center; }
+#header .page-title-wrap{height: 60px;  color: #FFFFFF;text-align: center;line-height: 60px;}
+#header .page-title-wrap .icon{width: 40px;height: 40px;border-radius: 50%;margin-top: 10px; }
+#header .page-title-wrap h2{font-size: 18px;  text-align: center;display: inline-block;position: relative;
+    top: -10px; }
+
 /*footer*/
 #page #footer{position: fixed;top: 560px;left: 0;width: 100%;padding: 10px 0;}
 /*container*/
@@ -38,4 +36,4 @@ html,body{min-width: 800px; min-height: 600px;overflow-x: hidden;overflow-y: hid
 .tool-icon-wrap-item .tool-wrap-avatar{margin-right: 3px}
 .tool-icon-wrap-item .tool-wrap-avatar .icon{width:58px;height:58px;vertical-align: middle;}
 .tool-icon-wrap-item .tool-wrap-name { height:13px;vertical-align: middle;font-size: 12px;}
-
+.tool-wrap-avatar .icon{border-radius:16px;}
