@@ -29,7 +29,6 @@ define(function (require, exports, module) {
                     if((nowScrollTop>val)&&(val<targetAry[index+1])){
                         $allItemsLink.removeClass("active");
                         if(nowScrollTop<200){
-                            console.log(nowScrollTop);
                             $allItemsLink.eq(0).addClass("active");
                         }else{
                             $allItemsLink.eq(index+1).addClass("active");
@@ -84,7 +83,7 @@ define(function (require, exports, module) {
                 $.each(toolsData,function(index,val){
                     tempToolsStr=[
                         '        <div class="tool-icon-wrap-item tac">',
-                        '            <a class="tool-wrap" href="http://www.qiuziti.com/" target="_blank" title="'+val.tool_icon_description+'">',
+                        '            <a class="tool-wrap" href="'+val.tool_link+'" target="_blank" title="'+val.tool_icon_description+'">',
                         '                <span class="tool-wrap-avatar">',
                         '                    <svg class="icon">',
                         '                        <use xlink:href="'+val.tool_icon_code+'"></use>',
@@ -113,7 +112,7 @@ define(function (require, exports, module) {
                 $.each(toolsData,function(index,val){
                     tempToolsStr=[
                         '        <div class="tool-icon-wrap-item tac">',
-                        '            <a class="tool-wrap" href="http://www.qiuziti.com/" target="_blank" title="'+val.tool_icon_description+'">',
+                        '            <a class="tool-wrap" href="'+val.tool_link+'" target="_blank" title="'+val.tool_icon_description+'">',
                         '                <span class="tool-wrap-avatar">',
                         '                    <svg class="icon">',
                         '                        <use xlink:href="'+val.tool_icon_code+'"></use>',

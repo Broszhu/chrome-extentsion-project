@@ -15,7 +15,7 @@ html,body{min-width: 800px; min-height: 600px;overflow-x: hidden;overflow-y: hid
 /*container*/
 .container{background-color:#FFFFFF;position: relative;}
 .container .bodyer-side{width: 108px;  min-width: 108px; border-right: 1px solid #D7D8DE;min-height: 1px;/*background-color:#3d3d3d;*/ }
-.container .bodyer-side .menu{width: 108px; }
+.container .bodyer-side .menu{width: 108px;background-color: #eeeeee; }
 .container .bodyer-side .menu-two-navigation{width: 108px;background-color:#3d3d3d; height: 100%;}
 .container .bodyer-side .menu-left{position: absolute;top: 0;left:0; }
 .container .bodyer-side .menu-right{position: absolute;top: 0;right:0; }
