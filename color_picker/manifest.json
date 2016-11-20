@@ -1,0 +1,22 @@
+{
+  "name":"拾色工具",
+  "version":"0.1",
+  "manifest_version":2,
+  "description":"拾色工具，欢迎提需求;",
+  "icons": {
+    "16": "./img/icon/icon16.png",
+    "48": "./img/icon/icon48.png",
+    "128": "./img/icon/icon128.png"
+  },
+  "browser_action":{
+    "default_icon":{
+      "19": "./img/icon/icon19.png",
+      "38": "./img/icon/icon38.png"
+    },
+    "default_title":"这是一款拾色工具",
+    "default_popup":"popup.html"
+  },
+  "options_page": "popup.html",
+  "permissions":[
+  ]
+}

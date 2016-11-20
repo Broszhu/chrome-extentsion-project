@@ -5,6 +5,7 @@ html,body{min-width: 800px; min-height: 600px;overflow-x: hidden;overflow-y: hid
 #header .inner-wrp{overflow:hidden; }
 #header .page-title-wrap{height: 60px;  color: #FFFFFF;text-align: center;line-height: 60px;}
 #header .page-title-wrap .icon{width: 40px;height: 40px;border-radius: 50%;margin-top: 10px; }
+#header .logo {  float: left;padding-left: 0;padding-top: 12px;height: 48px;width: 108px;text-align: center;}
 #header .page-title-wrap h2{font-size: 18px;  text-align: center;display: inline-block;position: relative;
     top: -10px; }
 
