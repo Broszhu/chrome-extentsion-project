@@ -1,6 +1,9 @@
 define(function (require, exports, module) {
     "require:nomunge,exports:nomunge,module:nomunge";
+    var $body=$("body");
     var $page=$("#page-popup");
+    var $pageLabel=$body.find("#page");
+    var $dialog=$("#fixed-dialog");
     var $ContactHeader=$page.find(".menu");
     var $pageMain=$page.find(".page-main");
     var targetAry=[];
@@ -12,6 +15,7 @@ define(function (require, exports, module) {
             this.bind();
         },
         bind:function(){
+            var self=this;
             $ContactHeader.on("click",".menu-item",function(e){
                 e.preventDefault();
                 var $this=$(this);
@@ -28,14 +32,35 @@ define(function (require, exports, module) {
                 $.each(targetAry,function(index,val){
                     if((nowScrollTop>val)&&(val<targetAry[index+1])){
                         $allItemsLink.removeClass("active");
-                        if(nowScrollTop<200){
+                        if(nowScrollTop<130){
                             $allItemsLink.eq(0).addClass("active");
                         }else{
                             $allItemsLink.eq(index+1).addClass("active");
                         }
                     }
                 })
-            }
+            };
+            /*click tool*/
+            $page.on("click",".j-tool-wrap",function(e){
+                e.preventDefault();
+                var nextLevelData=$(this).data("next_level");
+                if(!!nextLevelData){
+                    $pageLabel.addClass("blurry-glass");
+                    $dialog.css("display","block");
+                    self.initDialogData(nextLevelData);
+                }else{
+                    window.open($(this).attr("href"))
+                }
+            });
+            /*if no wrap , hide the dialog*/
+            $dialog.on("click",function(e){
+                var eTarget= e.target,
+                    flagCloseParent=eTarget.closest(".dialog-wrap");
+                if(!flagCloseParent){
+                    $pageLabel.removeClass("blurry-glass");
+                    $dialog.css("display","none");
+                }
+            })
         },
         initLeftRightNavigation:function(){
             /*左右两个列表展示*/
@@ -81,9 +106,13 @@ define(function (require, exports, module) {
                     '    <p class="tool-icon-wrap-title wui-txt-xs wui-txt-muted">'+val.item_name+'</p>',
                     '    <div class="tool-icon-wrap">'].join("");
                 $.each(toolsData,function(index,val){
+                    var nextLevelStr="";
+                    if(val.next_level){
+                        nextLevelStr+=JSON.stringify(val.next_level);
+                    }
                     tempToolsStr=[
                         '        <div class="tool-icon-wrap-item tac">',
-                        '            <a class="tool-wrap" href="'+val.tool_link+'" target="_blank" title="'+val.tool_icon_description+'">',
+                        '            <a class="tool-wrap j-tool-wrap" href="'+val.tool_link+'" target="_blank" title="'+val.tool_icon_description+'" data-next_level='+nextLevelStr+'>',
                         '                <span class="tool-wrap-avatar">',
                         '                    <svg class="icon">',
                         '                        <use xlink:href="'+val.tool_icon_code+'"></use>',
@@ -135,6 +164,26 @@ define(function (require, exports, module) {
             $pageMain.find(".j-tool-item").each(function(){
                 targetAry.push(($(this).offset()||0).top)
             });
+        },
+        initDialogData:function (data){
+            var $dialogWrap=$dialog.find(".j-dialog-wrap");
+            var dialogContStr="";
+            $dialog.find(".j-dialog-title").text(data[0].group_title);
+            $.each(data,function(index,val){
+                var dialogItemStr=['<div class="tool-icon-wrap-item tac">',
+                    '            <a class="tool-wrap j-tool-wrap" href="'+val.tool_link+'" target="_blank" title="'+val.tool_icon_description+'" data-next_level="">',
+                    '                    <span class="tool-wrap-avatar">',
+                    '                        <svg class="icon">',
+                    '                            <use xlink:href='+val.tool_icon_code+'></use>',
+                    '                        </svg>',
+                    '                    </span>',
+                    '                <p class="tool-wrap-name">'+val.tool_name+'</p>',
+                    '            </a>',
+                    '        </div>'].join("");
+                dialogContStr+=dialogItemStr;
+            });
+            $dialogWrap.empty().append(dialogContStr);
+
         }
     };
     pageUtility.init();
